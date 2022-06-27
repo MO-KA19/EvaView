@@ -1,0 +1,175 @@
+:root {
+    --main-color: #2083f8;
+    --text-color: #8492A3;
+    --footer-txt-color: #b9b9b9;
+    --section-padding: 100px;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Cairo', sans-serif;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 196vh;
+    height: fit-content;
+}
+
+.pics {
+    width: 75vh;
+    height: 100vh;
+    margin-left: 16px;
+    display: block;
+}
+
+.pics img {
+    object-fit: cover;
+    border-radius: 16px;
+    height: inherit;
+    width: inherit;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: inherit;
+    top: 80%;
+    height: fit-content;
+}
+
+.slider i {
+    font-size: 50px;
+    color: #191919;
+    transition: .5s;
+}
+
+.slider i:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.info .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: inherit;
+    width: 1000px;
+}
+
+.row {
+    width: 980px;
+    height: 480px;
+    margin: 0;
+}
+
+.icos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 10%;
+    background-color: #F1F1F1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.icos i {
+    font-size: 60px;
+    color: #2083f8;
+    display: inline-block;
+    padding: 24px;
+}
+
+.spec {
+    width: fit-content;
+    height: fit-content;
+}
+
+.spec-i {
+    width: 100px;
+    height: 100px;
+}
+
+.spec a {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.spec h2 {
+    font-size: 18px;
+    text-align: right;
+}
+
+
+
+
+@media (max-width: 430px) {
+    
+    .details {
+        width: 410px;
+    }
+
+    .pics {
+        width: 410px;
+        height: inherit;
+    }
+
+    .slider {
+        width: inherit;
+        top: 50%;
+        z-index: 3;
+    }
+
+    .info .container {
+        width: 410px;
+    }
+
+    .row {
+        width: 410px;
+        height: inherit;
+    }
+
+    .container h1 {
+        font-size: 28px;
+        padding-top: 100px;
+    }
+
+    .spec {
+        width: 300px;
+        height: inherit;
+    }
+
+    .spec h2 {
+        font-size: 14px;
+        line-height: 32px;
+        font-weight: 700;
+    }
+
+    .icos i {
+        font-size: 32px;
+        color: #2083f8;
+        display: inline-block;
+        padding: 36px;
+    }
+}
